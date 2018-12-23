@@ -1,7 +1,7 @@
-package com.izdebski.SpringBootJDBC.dao.impl;
+package com.izdebski.SpringBootJdbcHikariCP.dao.impl;
 
-import com.izdebski.SpringBootJDBC.dao.EmployeeDAO;
-import com.izdebski.SpringBootJDBC.model.Employee;
+import com.izdebski.SpringBootJdbcHikariCP.dao.EmployeeDAO;
+import com.izdebski.SpringBootJdbcHikariCP.model.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;

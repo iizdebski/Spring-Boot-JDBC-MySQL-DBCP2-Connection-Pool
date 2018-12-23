@@ -1,4 +1,4 @@
-package com.izdebski.SpringBootJDBC.model;
+package com.izdebski.SpringBootJdbcHikariCP.model;
 
 public class Employee {
     private Integer employeeId;
