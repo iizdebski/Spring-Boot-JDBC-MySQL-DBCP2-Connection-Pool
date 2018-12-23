@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.izdebski</groupId>
-	<artifactId>SpringBootJDBC</artifactId>
+	<artifactId>SpringBootJDBCTomcatConnectionPool</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SpringBootJDBC</name>
+	<name>SpringBootJDBCTomcatConnectionPool</name>
 	<description>Spring Boot JDBC + MySQL</description>
 
 	<properties>

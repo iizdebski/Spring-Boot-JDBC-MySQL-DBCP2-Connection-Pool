@@ -7,21 +7,28 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import javax.sql.DataSource;
+
 @SpringBootApplication
-public class SpringBootJdbcApplication implements CommandLineRunner {
+public class SpringBootJdbcTomcatConnectionPool implements CommandLineRunner {
 
 	@Autowired
 	private EmployeeDAO employeeDAO;
 
+	@Autowired
+	private DataSource dataSource;
+
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootJdbcApplication.class, args);
+		SpringApplication.run(SpringBootJdbcTomcatConnectionPool.class, args);
 	}
 	@Override
 	public void run(String... args) throws Exception {
 		//createEmployee();
-		getEmployeeById();
-		employeeDAO.updateEmployeeEmailById(3, "petrenko.cs2031@gamil.com");
-		employeeDAO.deleteEmployeeById(3);
+		//getEmployeeById();
+		//employeeDAO.updateEmployeeEmailById(3, "petrenko.cs2031@gamil.com");
+		//employeeDAO.deleteEmployeeById(3);
+
+		System.out.println("DataSource===" + dataSource);
 	}
 
 	private void getEmployeeById() {
