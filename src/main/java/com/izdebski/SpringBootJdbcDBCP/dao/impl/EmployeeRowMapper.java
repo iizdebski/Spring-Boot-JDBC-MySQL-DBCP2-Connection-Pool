@@ -1,9 +1,9 @@
-package com.izdebski.SpringBootJdbcHikariCP.dao.impl;
+package com.izdebski.SpringBootJdbcDBCP.dao.impl;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.izdebski.SpringBootJdbcHikariCP.model.Employee;
+import com.izdebski.SpringBootJdbcDBCP.model.Employee;
 import org.springframework.jdbc.core.RowMapper;
 
 public class EmployeeRowMapper implements RowMapper<Employee> {

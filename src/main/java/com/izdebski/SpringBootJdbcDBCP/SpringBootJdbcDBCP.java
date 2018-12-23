@@ -1,7 +1,7 @@
-package com.izdebski.SpringBootJdbcHikariCP;
+package com.izdebski.SpringBootJdbcDBCP;
 
-import com.izdebski.SpringBootJdbcHikariCP.dao.EmployeeDAO;
-import com.izdebski.SpringBootJdbcHikariCP.model.Employee;
+import com.izdebski.SpringBootJdbcDBCP.dao.EmployeeDAO;
+import com.izdebski.SpringBootJdbcDBCP.model.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import javax.sql.DataSource;
 
 @SpringBootApplication
-public class SpringBootJdbcHikariCP implements CommandLineRunner {
+public class SpringBootJdbcDBCP implements CommandLineRunner {
 
 	@Autowired
 	private EmployeeDAO employeeDAO;
@@ -19,7 +19,7 @@ public class SpringBootJdbcHikariCP implements CommandLineRunner {
 	private DataSource dataSource;
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootJdbcHikariCP.class, args);
+		SpringApplication.run(SpringBootJdbcDBCP.class, args);
 	}
 	@Override
 	public void run(String... args) throws Exception {

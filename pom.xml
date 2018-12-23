@@ -23,7 +23,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
-		<!-- exclude tomcat-jdbc, Spring Boot will use HikariCP -->
+		<!-- exclude tomcat jdbc connection pool, use commons-dbcp2 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jdbc</artifactId>
@@ -34,10 +34,11 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		<!-- exclude tomcat-jdbc, Spring Boot will use HikariCP automatically -->
+
+		<!-- exclude tomcat-jdbc, Spring Boot will use commons-dbcp2 automatically -->
 		<dependency>
-			<groupId>com.zaxxer</groupId>
-			<artifactId>HikariCP</artifactId>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-dbcp2</artifactId>
 		</dependency>
 
 		<dependency>

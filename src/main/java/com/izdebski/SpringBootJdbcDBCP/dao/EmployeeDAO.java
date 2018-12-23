@@ -1,6 +1,6 @@
-package com.izdebski.SpringBootJdbcHikariCP.dao;
+package com.izdebski.SpringBootJdbcDBCP.dao;
 
-import com.izdebski.SpringBootJdbcHikariCP.model.Employee;
+import com.izdebski.SpringBootJdbcDBCP.model.Employee;
 
 public interface EmployeeDAO {
     public abstract void createEmployee(Employee employee);
